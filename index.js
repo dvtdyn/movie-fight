@@ -32,6 +32,12 @@ createAutoComplete({
       ${movie.Title} (${movie.Year})
     `
   },
+  inputValue(movie) {
+    return movie.Title
+  },
+  onOptionSelect(movie) {
+    onMovieSelect(movie)
+  },
 })
 
 const movieTemplate = movieDetail => {
