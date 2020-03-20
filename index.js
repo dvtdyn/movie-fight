@@ -76,7 +76,6 @@ const runComparison = () => {
 
     const leftSideValue = parseFloat(leftStat.dataset.value)
     const rightSideValue = parseFloat(rightStat.dataset.value)
-    console.log(leftSideValue, rightSideValue)
 
     if (rightSideValue > leftSideValue) {
       leftStat.classList.remove('is-primary')
